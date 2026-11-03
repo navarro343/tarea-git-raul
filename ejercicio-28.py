@@ -2,7 +2,7 @@ superior = int(input("Dime el intervalor mayor: "))
 inferior = int(input("Dime el intervalor menor: "))
 
 while superior < inferior:
-    print("El limite superior tiene que ser mayor")
+    print("El intervalo superior tiene que ser mayor")
     superior = int(input("Dime el intervalor mayor: "))
     inferior = int(input("Dime el intervalor menor: "))
 
