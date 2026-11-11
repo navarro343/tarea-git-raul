@@ -17,4 +17,4 @@ for A in range(5):
     suma_columna = 0
     for B in range(5):
         suma_columna += tabla[B][A]
-    print(f"Suma de la columna {A + 1}: {suma_columna}")
+    print(f"Suma de la columna {A + 1}: {suma_columna}") 
