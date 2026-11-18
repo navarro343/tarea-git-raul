@@ -26,6 +26,8 @@ while choice != '5':
         for nombre in agenda:
             if nombre.startswith(cadena):
                 print(f'{agenda[nombre]}: {agenda} ')
+        else:
+            print(f'El contacto no existe, agregalo pulsando otra vez 1')
 
     elif choice == "3":
         for nombre in agenda:
