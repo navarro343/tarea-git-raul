@@ -1,9 +1,9 @@
-def Login(nombre_usuario, contraseña, intentos):
+def Login(nombre_usuario, contraseña):
     if nombre_usuario == 'usuario1' and contraseña == 'asdasd':
-        return True, intentos
+        return True
     else:
-        return False, intentos + 1
-
+        return False
+    
 intentos = 0
 
 while intentos < 3:
@@ -14,6 +14,7 @@ while intentos < 3:
         print("Todo correcto, bienvenido")
         break
     else:
+        intentos += 1
         print(f"No es correcto. Te quedan {3 - intentos} intentos")
 
 if intentos == 3:
