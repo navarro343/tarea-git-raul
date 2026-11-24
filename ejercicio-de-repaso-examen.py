@@ -25,7 +25,9 @@
 #"Normal" si está entre 10 y 50 (ambos incluidos)
 #"Caro" si es mayor de 50
 
-#Además, valida que el precio no sea negativo y que el porcentaje esté entre 0 y 100, volviendo a pedirlos si no lo están.
+#Además, valida que el precio no sea negativo y
+#que el porcentaje esté entre 0 y 100, volviendo
+#a pedirlos si no lo están.
 
 #1......
 productos = []
@@ -61,3 +63,17 @@ porcentaje = int(input("Di cuanto es el descuento: "))
 total = descuento( precio , porcentaje )
 
 print(f'El precio es {precio} su descuento es {porcentaje} y el final del precio es {total}')
+
+#4..........
+while precio < 0:
+    precio = int(input("El precio es negativo no es valido, vuelve a decir el precio: "))
+
+while porcentaje <0 or porcentaje >100:
+    porcentaje = int(input("El porcentaje tienes que estar entre (0 y100), vuelve a decirme cual es:"))
+
+if total<10:
+    print("Barato")
+elif total <= 50:
+    print("Normal")
+else:
+    print("Caro")
